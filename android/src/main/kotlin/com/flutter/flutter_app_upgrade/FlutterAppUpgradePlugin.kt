@@ -46,12 +46,12 @@ public class FlutterAppUpgradePlugin : FlutterPlugin, MethodCallHandler, Activit
   companion object {
     lateinit var mContext: Context
 
-    @JvmStatic
-    fun registerWith(registrar: Registrar) {
-      this.mContext = registrar.activity()
-      val channel = MethodChannel(registrar.messenger(), "flutter_app_upgrade")
-      channel.setMethodCallHandler(FlutterAppUpgradePlugin())
-    }
+    // @JvmStatic
+    // fun registerWith(registrar: Registrar) {
+    //   this.mContext = registrar.activity()
+    //   val channel = MethodChannel(registrar.messenger(), "flutter_app_upgrade")
+    //   channel.setMethodCallHandler(FlutterAppUpgradePlugin())
+    // }
 
   }
 

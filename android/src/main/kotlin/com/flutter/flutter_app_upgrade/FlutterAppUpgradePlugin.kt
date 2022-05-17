@@ -63,9 +63,9 @@ public class FlutterAppUpgradePlugin : FlutterPlugin, MethodCallHandler, Activit
     } else if (call.method == "install") {
       //安装app
       val path = call.argument<String>("path")
-      path?.also {
+      path?.also {  
         startInstall(mContext, it)
-      }
+      } 
     } else if (call.method == "getInstallMarket") {
       var packageList = getInstallMarket(call.argument<List<String>>("packages"))
       result.success(packageList)

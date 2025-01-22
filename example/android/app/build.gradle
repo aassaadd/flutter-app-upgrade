@@ -26,6 +26,8 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
+
+    namepace "com.flutter.flutter_app_upgrade_example"
     compileSdkVersion 28
 
     sourceSets {
